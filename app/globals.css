@@ -1,0 +1,250 @@
+@import "tailwindcss";
+
+/* === Dark Mode Configuration === */
+@variant dark (&:where(.dark, .dark *));
+
+/* === Color System === */
+:root {
+  /* Primary Blue */
+  --primary-50: #f0f3fe;
+  --primary-100: #e4e9fc;
+  --primary-200: #cdd7f9;
+  --primary-300: #aabdf5;
+  --primary-400: #7d9bf0;
+  --primary-500: #4666D6;
+  --primary-600: #344ec5;
+  --primary-700: #2b3fa3;
+  --primary-800: #263484;
+  --primary-900: #232e6a;
+  
+  /* Accent Red */
+  --accent-400: #f07672;
+  --accent-500: #D34843;
+  --accent-600: #b9322d;
+  
+  /* Warm Grays */
+  --warm-50: #faf9f8;
+  --warm-100: #f5f3f1;
+  --warm-200: #ebe8e5;
+  --warm-300: #D9D1CD;
+  --warm-400: #a8a29e;
+  --warm-500: #78716c;
+  
+  /* Green (for success states) */
+  --green-400: #4ade80;
+  --green-500: #22c55e;
+  --green-600: #16a34a;
+  --green-900: #14532d;
+  
+  /* Slate (full range) */
+  --slate-50: #f8fafc;
+  --slate-100: #f1f5f9;
+  --slate-200: #e2e8f0;
+  --slate-300: #cbd5e1;
+  --slate-400: #94a3b8;
+  --slate-500: #64748b;
+  --slate-600: #475569;
+  --slate-700: #334155;
+  --slate-800: #1e293b;
+  --slate-900: #0f172a;
+  --slate-950: #020617;
+}
+
+/* === Tailwind Theme Extension === */
+@theme {
+  --color-primary-50: var(--primary-50);
+  --color-primary-100: var(--primary-100);
+  --color-primary-200: var(--primary-200);
+  --color-primary-300: var(--primary-300);
+  --color-primary-400: var(--primary-400);
+  --color-primary-500: var(--primary-500);
+  --color-primary-600: var(--primary-600);
+  --color-primary-700: var(--primary-700);
+  --color-primary-800: var(--primary-800);
+  --color-primary-900: var(--primary-900);
+  
+  --color-accent-400: var(--accent-400);
+  --color-accent-500: var(--accent-500);
+  --color-accent-600: var(--accent-600);
+  
+  --color-warm-50: var(--warm-50);
+  --color-warm-100: var(--warm-100);
+  --color-warm-200: var(--warm-200);
+  --color-warm-300: var(--warm-300);
+  --color-warm-400: var(--warm-400);
+  --color-warm-500: var(--warm-500);
+  
+  --color-slate-50: var(--slate-50);
+  --color-slate-100: var(--slate-100);
+  --color-slate-200: var(--slate-200);
+  --color-slate-300: var(--slate-300);
+  --color-slate-400: var(--slate-400);
+  --color-slate-500: var(--slate-500);
+  --color-slate-600: var(--slate-600);
+  --color-slate-700: var(--slate-700);
+  --color-slate-800: var(--slate-800);
+  --color-slate-900: var(--slate-900);
+  --color-slate-950: var(--slate-950);
+  
+  --color-green-400: var(--green-400);
+  --color-green-500: var(--green-500);
+  --color-green-600: var(--green-600);
+  --color-green-900: var(--green-900);
+}
+
+/* === Base Styles === */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #ffffff;
+  color: #0f172a;
+  font-family: var(--font-inter), var(--font-noto-sans-jp), sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dark body {
+  background: var(--slate-950);
+  color: #f1f5f9;
+}
+
+/* === Film Grain Overlay === */
+.film-grain {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 40;
+  opacity: 0.04;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+}
+
+.dark .film-grain {
+  opacity: 0.03;
+}
+
+/* === Vignette Effect === */
+.vignette {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 41;
+  background: radial-gradient(circle at center, transparent 60%, rgba(0,0,0,0.15) 100%);
+}
+
+.dark .vignette {
+  background: radial-gradient(circle at center, transparent 50%, rgba(0,0,0,0.4) 100%);
+}
+
+/* === Text Halation (Bloom Effect) === */
+.text-halation {
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.1), 0 0 20px rgba(70, 102, 214, 0.1);
+}
+
+.dark .text-halation {
+  text-shadow: 0 0 15px rgba(255, 255, 255, 0.4), 0 0 30px rgba(255, 255, 255, 0.2);
+}
+
+/* === Glass Effect === */
+.glass {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.dark .glass {
+  background: rgba(15, 23, 42, 0.6);
+}
+
+/* === Reveal Animation === */
+.reveal-hidden {
+  opacity: 0;
+  transform: translateY(30px);
+  transition-property: opacity, transform;
+  transition-duration: 1000ms;
+  transition-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.reveal-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* === Reduced Motion === */
+@media (prefers-reduced-motion: reduce) {
+  .reveal-hidden,
+  .reveal-visible {
+    transition: none !important;
+    transform: none !important;
+  }
+  .animate-pulse-slow,
+  .animate-float,
+  .animate-pulse,
+  .animate-ping {
+    animation: none !important;
+  }
+}
+
+/* === Animations === */
+@keyframes pulse-slow {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+/* === Focus Styles === */
+:focus-visible {
+  outline: 2px solid var(--primary-500);
+  outline-offset: 2px;
+}
+
+button:focus-visible,
+a:focus-visible {
+  outline: 2px solid var(--primary-500);
+  outline-offset: 2px;
+}
+
+/* === Selection === */
+::selection {
+  background: var(--primary-200);
+  color: var(--primary-900);
+}
+
+.dark ::selection {
+  background: var(--primary-800);
+  color: white;
+}
+
+/* === Perspective for 3D Effects === */
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+/* === Glow Effects === */
+.box-shadow-glow {
+  box-shadow: 0 0 10px currentColor;
+}
+
+.text-shadow-glow {
+  text-shadow: 0 0 10px currentColor;
+}

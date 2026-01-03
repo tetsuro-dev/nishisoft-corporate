@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#FFFFFF"/>
+  
+  <!-- Logo area -->
+  <text x="100" y="280" font-family="Noto Sans JP, sans-serif" font-size="48" font-weight="700" fill="#000000">西ソフト</text>
+  
+  <!-- Tagline -->
+  <text x="100" y="360" font-family="Noto Sans JP, sans-serif" font-size="32" font-weight="500" fill="#000000">技術的に難しい課題に向き合います。</text>
+  
+  <!-- Subtitle -->
+  <text x="100" y="420" font-family="Noto Sans JP, sans-serif" font-size="20" font-weight="400" fill="#666666">ラボ型開発・技術コンサルティング</text>
+  
+  <!-- Accent line -->
+  <rect x="100" y="480" width="60" height="4" fill="#4666D6"/>
+</svg>
+
