@@ -29,15 +29,15 @@ const jetbrainsMono = JetBrains_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://nishisoft.com"),
-  title: "西ソフト株式会社 | 技術で事業を加速させる",
-  description: "まるでクライアント社内チームのように機動的。西ソフト株式会社は、ラボ型開発と技術コンサルティングで事業の成長を支援します。",
+  title: "西ソフト株式会社 | 技術と実行力で、事業の不確実性を突破する",
+  description: "まるで、貴社のコアチームのように。ラボ型開発と技術コンサルティングで、事業の不確実性を技術と実行力で突破します。",
   icons: {
     icon: [{ url: "/favicon.svg", type: "image/svg+xml" }],
     apple: [{ url: "/apple-touch-icon.png", sizes: "180x180" }],
   },
   openGraph: {
-    title: "西ソフト株式会社 | 技術で事業を加速させる",
-    description: "まるでクライアント社内チームのように機動的。ラボ型開発と技術コンサルティングで事業の成長を支援。",
+    title: "西ソフト株式会社 | 技術と実行力で、事業の不確実性を突破する",
+    description: "まるで、貴社のコアチームのように。ラボ型開発と技術コンサルティングで、事業の不確実性を技術と実行力で突破します。",
     url: "https://nishisoft.com",
     siteName: "西ソフト",
     locale: "ja_JP",
