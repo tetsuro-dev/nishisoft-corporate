@@ -6,7 +6,7 @@ import SectionHeading from "@/components/ui/SectionHeading";
 const PRINCIPLES = [
   {
     title: "品質は、後から足せない",
-    desc: "可読性・テスト・レビューを“開発の作法”として組み込み、変更に強い状態を保ちます。",
+    desc: "可読性・テスト・レビューを当たり前のこととして組み込み、変更に強い状態を保ちます。",
   },
   {
     title: "セキュリティは、設計の前提",
@@ -36,7 +36,7 @@ export default function Principles() {
           <SectionHeading
             sub="原則"
             title="譲れない原則"
-            desc="当社は「一貫性」を経営理念に据えています。原理原則を最初に共有し、お客様にもご理解いただいたうえで進める。だから判断がぶれない。変化の中でも、品質と意思決定の筋を通します。"
+            desc="当社は「一貫性」を経営理念に据えています。原理原則を最初に共有し、お客様にもご理解いただいたうえで進める。だから判断がぶれない。変化の中でも、品質と判断基準を守り抜きます。"
             align="center"
           />
         </Reveal>

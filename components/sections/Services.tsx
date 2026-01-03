@@ -79,7 +79,7 @@ export default function Services() {
                   CTO/VPoEのパートナーとして、技術戦略の策定、アーキテクチャ設計、開発組織の構築を支援します。
                   <br />
                   <span className="text-accent-500 font-medium">
-                    経営と現場をつなぐ、技術の通訳者として。
+                    経営と現場、両方の言葉がわかるから。
                   </span>
                 </p>
                 <div className="grid sm:grid-cols-2 gap-x-12 gap-y-6">

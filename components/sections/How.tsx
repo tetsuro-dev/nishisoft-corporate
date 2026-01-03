@@ -10,7 +10,7 @@ const APPROACHES = [
   },
   {
     title: "判断を、見える形で残す",
-    desc: "なぜその技術/設計なのかを言語化します。意思決定の筋道が、将来の保守コストを下げます。",
+    desc: "なぜその技術/設計なのかを言語化します。なぜそう決めたかが残れば、後から迷わない。",
   },
   {
     title: "実装と運用に、最後まで責任を持つ",
@@ -36,7 +36,7 @@ export default function How() {
                 <p className="text-2xl text-primary-600 dark:text-primary-300 font-bold mb-8 text-halation leading-relaxed">
                   ラボ型開発のみ。
                   <br />
-                  変化を前提に、勝ち筋へ寄せていきます。
+                  変化を前提に、最善手を探り続けます。
                 </p>
                 <p className="text-slate-600 dark:text-slate-400 leading-loose text-lg font-light">
                   チームの一員として中長期の成長にコミットするため、私たちはラボ型開発のみを採用しています。

@@ -88,7 +88,7 @@ export default function Security() {
                     <div>
                       <div className="text-white font-medium">レビューとログ設計</div>
                       <div className="text-slate-400 leading-relaxed">
-                        監査性（追跡可能性）を担保し、障害と不正の検知に備えます。
+                        誰が何をしたか追跡できるようにし、障害と不正の検知に備えます。
                       </div>
                     </div>
                   </div>
