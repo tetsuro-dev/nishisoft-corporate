@@ -28,7 +28,7 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://nishisoft.jp"),
+  metadataBase: new URL("https://nishisoft.com"),
   title: "西ソフト株式会社 | 技術で事業を加速させる",
   description: "まるでクライアント社内チームのように機動的。西ソフト株式会社は、ラボ型開発と技術コンサルティングで事業の成長を支援します。",
   icons: {
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "西ソフト株式会社 | 技術で事業を加速させる",
     description: "まるでクライアント社内チームのように機動的。ラボ型開発と技術コンサルティングで事業の成長を支援。",
-    url: "https://nishisoft.jp",
+    url: "https://nishisoft.com",
     siteName: "西ソフト",
     locale: "ja_JP",
     type: "website",
