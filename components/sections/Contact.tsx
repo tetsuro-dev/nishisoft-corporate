@@ -4,7 +4,7 @@ import Reveal from "@/components/ui/Reveal";
 
 export default function Contact() {
   // Google FormのURLを差し替えて使用
-  const formUrl = "https://forms.gle/xxxx";
+  const formUrl = "https://forms.gle/DGcUAiQhUGwvtsAs7";
 
   return (
     <section

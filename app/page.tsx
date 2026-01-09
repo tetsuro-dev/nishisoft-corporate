@@ -5,7 +5,6 @@ import Principles from "@/components/sections/Principles";
 import How from "@/components/sections/How";
 import Services from "@/components/sections/Services";
 import Proof from "@/components/sections/Proof";
-import Security from "@/components/sections/Security";
 import Team from "@/components/sections/Team";
 import FitNotFit from "@/components/sections/FitNotFit";
 import Contact from "@/components/sections/Contact";
@@ -22,7 +21,6 @@ export default function Home() {
         <How />
         <Services />
         <Proof />
-        <Security />
         <Team />
         <FitNotFit />
         <Contact />

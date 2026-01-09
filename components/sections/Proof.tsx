@@ -5,26 +5,17 @@ import SectionHeading from "@/components/ui/SectionHeading";
 
 const PROOF_CARDS = [
   {
-    title: "事業売却まで、経営と技術の両面を担当",
-    desc: "HRテック・スタートアップで、CTO/COOとしてプロダクトと組織の両面を担い、エグジットに貢献しました。",
+    title: "「プロダクトをつくること」を深く理解",
+    desc: "創業者はスタートアップで、CTO/COOとしてエグジットを経験済み。数々のハードシングスを通じて、プロダクトをつくることを深く理解しています。",
   },
   {
-    title: "攻撃者視点のセキュリティ設計",
-    desc: "国際資格「ホワイトハッカー」を保有。設計初期から脆弱性を前提に、攻撃されにくい設計を作ります。",
+    title: "攻撃者目線のセキュリティ設計",
+    desc: "CTOは国際資格「ホワイトハッカー」を保有。設計初期から脆弱性を前提に、攻撃されにくい設計を作ります。",
   },
   {
     title: "大手とスタートアップ、両方で現場と経営を経験",
-    desc: "創業者は大手企業とスタートアップの双方で、現場と経営を経験しています。スピードと統制の両立が必要な局面でも迷いなく判断できます。",
+    desc: "創業者の二人は大手企業とスタートアップの双方で、現場と経営を経験。様々な経験から裏打ちされた判断が可能です。",
   },
-];
-
-const DOMAIN_AREAS = [
-  "マッチングサービスの基幹システム",
-  "広告トラッキング / 計測基盤",
-  "新規事業の立ち上げ・実装",
-  "強化学習などの導入支援",
-  "業務システム・社内ツール",
-  "セキュリティ設計・監査",
 ];
 
 export default function Proof() {
@@ -34,8 +25,8 @@ export default function Proof() {
         <Reveal>
           <SectionHeading
             sub="根拠"
-            title="信頼の根拠"
-            desc="創業者は大手企業とスタートアップの双方で現場と経営を経験。ご支援先も日本を代表する大手からスタートアップまで幅広い実績があります。社名・数値は守秘のため一部非公開ですが、守秘契約のうえ初回のご面談で詳細を共有できます。"
+            title="なぜ西ソフトを選ぶべきか"
+            desc="創業者は大手企業とスタートアップの双方で現場と経営を経験。ご支援先も日本を代表する大手からスタートアップまで幅広い実績がございます。過去のプロジェクト詳細については、ご面談にて共有可能な範囲でご説明いたします。"
             align="center"
           />
         </Reveal>
@@ -55,25 +46,6 @@ export default function Proof() {
           ))}
         </div>
 
-        <div className="mt-20">
-          <Reveal>
-            <div className="max-w-4xl mx-auto">
-              <p className="font-[family-name:var(--font-jetbrains-mono)] text-xs tracking-[0.18em] text-slate-400 dark:text-slate-500 mb-6">
-                領域
-              </p>
-              <div className="flex flex-wrap justify-center gap-3">
-                {DOMAIN_AREAS.map((item) => (
-                  <span
-                    key={item}
-                    className="text-sm px-4 py-2 rounded-full border border-slate-200 dark:border-slate-800 bg-white/60 dark:bg-slate-950/30 text-slate-600 dark:text-slate-400"
-                  >
-                    {item}
-                  </span>
-                ))}
-              </div>
-            </div>
-          </Reveal>
-        </div>
       </div>
     </section>
   );

@@ -46,7 +46,7 @@ export default function Services() {
                   クライアントの専属エンジニアリングチームとして、要件定義から実装、運用までを一気通貫で担当します。
                   <br />
                   <span className="text-accent-500 font-medium">
-                    外部パートナーではなく、内部チームのような距離感で。
+                    外部パートナーではなく、内製チームのような距離感で。
                   </span>
                 </p>
                 <div className="grid sm:grid-cols-2 gap-x-12 gap-y-6">
@@ -79,7 +79,7 @@ export default function Services() {
                   CTO/VPoEのパートナーとして、技術戦略の策定、アーキテクチャ設計、開発組織の構築を支援します。
                   <br />
                   <span className="text-accent-500 font-medium">
-                    経営と現場、両方の言葉がわかるから。
+                    経営と現場、両方の考え方がわかるから。
                   </span>
                 </p>
                 <div className="grid sm:grid-cols-2 gap-x-12 gap-y-6">
