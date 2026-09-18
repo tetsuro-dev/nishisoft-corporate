@@ -18,7 +18,7 @@ export default function Consortium() {
   return (
     <section
       id="consortium"
-      className="py-32 md:py-40 bg-white dark:bg-slate-900 border-y border-slate-100 dark:border-slate-800"
+      className="py-32 md:py-40 bg-white dark:bg-black border-y border-slate-100 dark:border-slate-900"
     >
       <div className="max-w-[1400px] mx-auto px-6 md:px-12">
         <Reveal>
