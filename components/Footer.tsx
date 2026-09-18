@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useTheme } from "@/components/ThemeProvider";
+import { CONSORTIUM_URL } from "@/components/sections/Consortium";
 
 export default function Footer() {
   const { theme } = useTheme();
@@ -87,6 +88,27 @@ export default function Footer() {
               <p>代表取締役</p>
               <p>西方 聖一 / 西川 哲郎</p>
             </div>
+            <a
+              href={CONSORTIUM_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group mt-6 inline-flex items-center gap-3"
+            >
+              <Image
+                src={
+                  theme === "dark"
+                    ? "/logos/logo_ai-consortium_b.png"
+                    : "/logos/logo_ai-consortium_w.png"
+                }
+                alt="AI導入支援コンソーシアム"
+                width={1592}
+                height={391}
+                className="h-6 w-auto"
+              />
+              <span className="text-xs text-slate-500 dark:text-slate-400 group-hover:text-primary-500 transition-colors">
+                発起企業
+              </span>
+            </a>
           </div>
         </div>
 

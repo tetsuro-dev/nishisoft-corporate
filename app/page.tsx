@@ -6,6 +6,7 @@ import How from "@/components/sections/How";
 import Services from "@/components/sections/Services";
 import Proof from "@/components/sections/Proof";
 import Team from "@/components/sections/Team";
+import Consortium from "@/components/sections/Consortium";
 import FitNotFit from "@/components/sections/FitNotFit";
 import Contact from "@/components/sections/Contact";
 import Footer from "@/components/Footer";
@@ -22,6 +23,7 @@ export default function Home() {
         <Services />
         <Proof />
         <Team />
+        <Consortium />
         <FitNotFit />
         <Contact />
       </main>
